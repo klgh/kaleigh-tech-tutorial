@@ -10,8 +10,8 @@ const Blog = ({ data }) => (
         <li>
           <Link to={`/${node.slug}`}>
             <div key={node.slug}>
-              <h2 dangerouslySetInnerHTML={{ __html: node.title }} />
-              <p className="postDate">{node.date}</p>
+              <h2>{node.title}</h2>
+              <p>{node.date}</p>
             </div>
           </Link>
         </li>
